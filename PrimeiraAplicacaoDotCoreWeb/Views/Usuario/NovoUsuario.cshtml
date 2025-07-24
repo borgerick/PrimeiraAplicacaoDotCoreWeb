@@ -1,0 +1,19 @@
+﻿@{
+	ViewData["Title"] = "Novo Usuário";
+}
+
+@using (Html.BeginForm("PersistirUsuario", "Usuario", FormMethod.Post))
+{
+	<div>
+		<input name="nome" class="form-control" type="text" placeholder="Nome">
+	</div>
+	<div>
+		<input name="sobrenome" class="form-control" type="text" placeholder="Sobrenome">
+	</div>
+	<div>
+		<input name="email" class="form-control" type="text" placeholder="Email">
+	</div>
+	<div>
+		<button class="btn btn-sucess "> Salvar</button>>
+	</div>
+}
